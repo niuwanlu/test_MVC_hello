@@ -4,8 +4,8 @@ package com.mkyong.common.model;
  * Created by wlniu on 1/22/15.
  */
 public class Item {
-    public String num;
-    public String name;
+    private String num;
+    private String name;
 
     public Item() {
 
