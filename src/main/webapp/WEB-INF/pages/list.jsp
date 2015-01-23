@@ -11,7 +11,9 @@
    <c:forEach var="um" items="${items}" >
        number:<c:out value="${um.num}"/>
        name:<c:out value="${um.name}"/>
-       price:<c:out value="${um.price}"/><br>
+       price:<c:out value="${um.price}"/>
+       noExempt:<c:out value="${um.noexem}"/>
+       <br>
    </c:forEach>
 
    <input type="button" value="add" onclick="javascript:location.href='add'">
