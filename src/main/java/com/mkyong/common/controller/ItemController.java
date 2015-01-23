@@ -33,5 +33,16 @@ public class ItemController {
         return "show";
     }
 
+    @RequestMapping(value="add", method = RequestMethod.GET)
+    public String add(Model model){
+        model.addAttribute("item", new Item());
+        return "add";
+    }
+
+    /*@RequestMapping(value="add", method = RequestMethod.POST)
+    public String add(Item item){
+
+    }*/
+
 
 }
