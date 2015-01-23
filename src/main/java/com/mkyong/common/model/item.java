@@ -4,23 +4,23 @@ package com.mkyong.common.model;
  * Created by wlniu on 1/22/15.
  */
 public class Item {
-    private String num;
+    private int num;
     private String name;
 
     public Item() {
 
     }
 
-    public Item(String num, String name) {
+    public Item(int num, String name) {
         super();
         this.num = num;
         this.name = name;
     }
 
-    public String getNum() {
+    public int getNum() {
         return num;
     }
-    public void setNum(String num) {
+    public void setNum(int num) {
         this.num = num;
     }
     public String getName() {

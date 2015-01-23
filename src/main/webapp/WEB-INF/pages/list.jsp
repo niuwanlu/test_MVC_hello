@@ -13,5 +13,6 @@
        name:<c:out value="${um.name}"/><br>
    </c:forEach>
 
+   <input type="button" value="add" onclick="javascript:location.href='add'">
 </body>
 </html>
