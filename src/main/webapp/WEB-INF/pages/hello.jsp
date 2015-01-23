@@ -10,10 +10,6 @@
                   <label for="name">name</label>
                   <input id="name" type="text" name="name">
             </div>
-            <div>
-                  <label for="price">price</label>
-                  <input id="price" type="text" name="price">
-            </div>
 
             <button type="submit">submit</button>
       </form><br>
