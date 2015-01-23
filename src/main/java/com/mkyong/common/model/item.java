@@ -6,15 +6,17 @@ package com.mkyong.common.model;
 public class Item {
     private int num;
     private String name;
+    private double price;
 
     public Item() {
 
     }
 
-    public Item(int num, String name) {
+    public Item(int num, String name, double price) {
         super();
         this.num = num;
         this.name = name;
+        this.price = price;
     }
 
     public int getNum() {
@@ -29,4 +31,6 @@ public class Item {
     public void setName(String name) {
         this.name = name;
     }
+    public double getPrice() { return price;}
+    public void setPrice(double price) { this.price = price;}
 }

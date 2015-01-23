@@ -8,6 +8,7 @@
 <sf:form method="post" modelAttribute="item" >
     num:<sf:input name="num" path="num"/>
     name:<sf:input name="name" path="name"/>
+    price:<sf:input name="price" path="price"/>
     <input type="submit" value="submit"/>
 </sf:form>
 </body>

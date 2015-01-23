@@ -10,7 +10,8 @@
 
    <c:forEach var="um" items="${items}" >
        number:<c:out value="${um.num}"/>
-       name:<c:out value="${um.name}"/><br>
+       name:<c:out value="${um.name}"/>
+       price:<c:out value="${um.price}"/><br>
    </c:forEach>
 
    <input type="button" value="add" onclick="javascript:location.href='add'">

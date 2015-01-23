@@ -25,7 +25,7 @@ public class ItemController {
 //        return mav;
 //    }
 
-    public Item item = new Item(1,"apple");
+    public Item item = new Item(1,"apple",3.00);
 //    private Map<String,Item> items = new HashMap<String,Item>();
 
 //    public ItemController(){
@@ -34,8 +34,8 @@ public class ItemController {
 
     private ArrayList<Item> items = new ArrayList<Item>();
     public ItemController(){
-        items.add(new Item(1,"book"));
-        items.add(new Item(2,"banana"));
+        items.add(new Item(1,"book",10.50));
+        items.add(new Item(2,"banana",5.0));
     }
 
     @RequestMapping(value="goods", method = RequestMethod.GET)
