@@ -9,11 +9,11 @@
 <body>
 
    <c:forEach var="um" items="${items}" >
-       number:<c:out value="${um.num}"/>
-       name:<c:out value="${um.name}"/>
-       price:<c:out value="${um.price}"/>
-       Exempt:<c:out value="${um.exempt}"/>
-       tax:<c:out value="${um.tax}"/>
+       number:<font color="gray"> <c:out value="${um.num}"/></font>
+       name:<font color="gray"><c:out value="${um.name}"/></font>
+       price:<font color="gray"><c:out value="${um.price}"/></font>
+       Exempt:<font color="gray"><c:out value="${um.exempt}"/></font>
+       tax:<font color="gray"><c:out value="${um.tax}"/></font>
        <br>
    </c:forEach>
 

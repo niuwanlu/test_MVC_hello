@@ -38,7 +38,7 @@ public class Item {
         this.num = num;
     }
 
-    @NotEmpty(message = "Name can not be empty")
+//    @NotEmpty(message = "Name can not be empty")
     public String getName() {
         return name;
     }
