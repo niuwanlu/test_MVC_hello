@@ -7,20 +7,20 @@ public class Item {
     private int num;
     private String name;
     private double price;
-    private boolean noexem;  //no exempt
+    private boolean exempt;
     private double tax;
 
     public Item() {
 
     }
 
-    public Item(int num, String name, double price, boolean noexem) {
+    public Item(int num, String name, double price, boolean exempt) {
         super();
         this.num = num;
         this.name = name;
         this.price = price;
-        this.noexem = noexem;
-        if(noexem)
+        this.exempt = exempt;
+        if(exempt)
             this.tax = 0;
         else
             this.tax = price * 0.1;
@@ -40,11 +40,14 @@ public class Item {
     }
     public double getPrice() { return price;}
     public void setPrice(double price) { this.price = price;}
-    public boolean getNoexem() { return noexem;}
-    public void setNoexem(boolean noexem) { this.noexem = noexem;}
-    public double getTax() { return tax;}
+    public boolean getExempt() { return exempt;}
+    public void setExempt(boolean exempt) { this.exempt = exempt;}
+    public double getTax() {
+        setTax();
+        return tax;
+    }
     public void setTax() {
-        if(noexem)
+        if(exempt)
             this.tax = 0;
         else
             this.tax = price * 0.1;

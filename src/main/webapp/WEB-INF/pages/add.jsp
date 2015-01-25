@@ -9,9 +9,9 @@
     num:<sf:input name="num" path="num"/>
     name:<sf:input name="name" path="name"/>
     price:<sf:input name="price" path="price"/>
-    noExempt:
-    yes:<input type="radio" name="noexem"  value=true />
-    no:<input type="radio" name="noexem" value=false />
+    Exempt:
+    yes:<input type="radio" name="exempt"  value=true />
+    no:<input type="radio" name="exempt" value=false />
     <input type="submit" value="submit"/>
 </sf:form>
 </body>
