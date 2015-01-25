@@ -13,6 +13,7 @@
        name:<c:out value="${um.name}"/>
        price:<c:out value="${um.price}"/>
        noExempt:<c:out value="${um.noexem}"/>
+       tax:<c:out value="${um.tax}"/>
        <br>
    </c:forEach>
 

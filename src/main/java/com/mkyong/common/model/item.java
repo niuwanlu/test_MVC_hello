@@ -8,6 +8,7 @@ public class Item {
     private String name;
     private double price;
     private boolean noexem;  //no exempt
+    private double tax;
 
     public Item() {
 
@@ -19,6 +20,10 @@ public class Item {
         this.name = name;
         this.price = price;
         this.noexem = noexem;
+        if(noexem)
+            this.tax = 0;
+        else
+            this.tax = price * 0.1;
     }
 
     public int getNum() {
@@ -37,4 +42,11 @@ public class Item {
     public void setPrice(double price) { this.price = price;}
     public boolean getNoexem() { return noexem;}
     public void setNoexem(boolean noexem) { this.noexem = noexem;}
+    public double getTax() { return tax;}
+    public void setTax() {
+        if(noexem)
+            this.tax = 0;
+        else
+            this.tax = price * 0.1;
+    }
 }
