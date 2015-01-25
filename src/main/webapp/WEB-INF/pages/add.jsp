@@ -7,7 +7,7 @@
 <body>
 <sf:form method="post" modelAttribute="item" >
     num:<sf:input name="num" path="num"/>
-    name:<sf:input name="name" path="name"/>
+    name:<sf:input name="name" path="name"/><sf:errors path="name"></sf:errors>
     price:<sf:input name="price" path="price"/>
     Exempt:
     yes:<input type="radio" name="exempt"  value=true />

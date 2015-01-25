@@ -3,6 +3,7 @@ package com.mkyong.common.controller;
 import com.mkyong.common.model.Item;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -10,6 +11,8 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
+import javax.validation.Valid;
 
 /**
  * Created by wlniu on 1/22/15.
@@ -49,7 +52,10 @@ public class ItemController {
     }
 
     @RequestMapping(value="add", method = RequestMethod.POST)
-    public String add(Item item){
+    public String add(@Valid Item item, BindingResult result){
+        if(result.hasErrors()){
+            return "add";
+        }
         items.add(item);
         totalTax += item.getTax() * item.getNum();
         totalPrice += item.getPrice() * item.getNum();

@@ -1,5 +1,7 @@
 package com.mkyong.common.model;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 /**
  * Created by wlniu on 1/22/15.
  */
@@ -25,23 +27,28 @@ public class Item {
         else
             this.tax = price * 0.1;
     }
-
+    
     public int getNum() {
         return num;
     }
     public void setNum(int num) {
         this.num = num;
     }
+
+    @NotEmpty(message = "Name can not be empty!")
     public String getName() {
         return name;
     }
     public void setName(String name) {
         this.name = name;
     }
+
     public double getPrice() { return price;}
     public void setPrice(double price) { this.price = price;}
+
     public boolean getExempt() { return exempt;}
     public void setExempt(boolean exempt) { this.exempt = exempt;}
+
     public double getTax() {
         setTax();
         return tax;
