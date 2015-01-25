@@ -6,9 +6,9 @@
 </head>
 <body>
 <sf:form method="post" modelAttribute="item" >
-    num:<sf:input name="num" path="num"/>
-    name:<sf:input name="name" path="name"/><sf:errors path="name"></sf:errors>
-    price:<sf:input name="price" path="price"/>
+    num:<sf:input name="num" path="num"/><sf:errors path="num" style="color:red"></sf:errors>
+    name:<sf:input name="name" path="name"/><sf:errors path="name" style="color:red"></sf:errors>
+    price:<sf:input name="price" path="price"/><sf:errors path="price" style="color:red"></sf:errors>
     Exempt:
     yes:<input type="radio" name="exempt"  value=true />
     no:<input type="radio" name="exempt" value=false />

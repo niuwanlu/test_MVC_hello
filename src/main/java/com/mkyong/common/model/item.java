@@ -1,6 +1,8 @@
 package com.mkyong.common.model;
 
 import org.hibernate.validator.constraints.NotEmpty;
+import org.hibernate.validator.constraints.Range;
+
 
 /**
  * Created by wlniu on 1/22/15.
@@ -27,7 +29,8 @@ public class Item {
         else
             this.tax = price * 0.1;
     }
-    
+
+    @Range(min=1, message = "Number must be positive")
     public int getNum() {
         return num;
     }
@@ -35,7 +38,7 @@ public class Item {
         this.num = num;
     }
 
-    @NotEmpty(message = "Name can not be empty!")
+    @NotEmpty(message = "Name can not be empty")
     public String getName() {
         return name;
     }
@@ -43,6 +46,7 @@ public class Item {
         this.name = name;
     }
 
+    @Range(min=0, message = "Price must be positive")
     public double getPrice() { return price;}
     public void setPrice(double price) { this.price = price;}
 
