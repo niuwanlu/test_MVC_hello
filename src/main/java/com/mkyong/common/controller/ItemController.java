@@ -25,7 +25,7 @@ public class ItemController {
 //        return mav;
 //    }
 
-    public Item item = new Item(1,"apple",3.00,true);
+
 
     private ArrayList<Item> items = new ArrayList<Item>();
     private double totalTax = 0;
@@ -41,12 +41,6 @@ public class ItemController {
         total = totalTax + totalPrice;
     }
 
-    @RequestMapping(value="goods", method = RequestMethod.GET)
-    public String list(Model model){
-        model.addAttribute(item);
-//        model.addAttribute("name", item.name);
-        return "show";
-    }
 
     @RequestMapping(value="add", method = RequestMethod.GET)
     public String add(Model model){

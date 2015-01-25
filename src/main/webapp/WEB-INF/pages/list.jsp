@@ -3,7 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
 <html>
 <head>
-
+    <title>Your Shopping Taxes List</title>
 </head>
 
 <body>
