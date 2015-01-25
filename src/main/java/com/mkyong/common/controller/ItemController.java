@@ -26,16 +26,19 @@ public class ItemController {
 //    }
 
     public Item item = new Item(1,"apple",3.00,true);
-//    private Map<String,Item> items = new HashMap<String,Item>();
-
-//    public ItemController(){
-//        items.put("book", new Item("1","book"));
-//    }
 
     private ArrayList<Item> items = new ArrayList<Item>();
+    private double totalTax = 0;
+    private double totalPrice = 0;
+    private double total = 0;
     public ItemController(){
         items.add(new Item(1,"book",10.50,false));
         items.add(new Item(2,"banana",5.0,true));
+        for(int i=0; i<items.size(); i++){
+            totalTax += items.get(i).getTax() * items.get(i).getNum();
+            totalPrice += items.get(i).getPrice() * items.get(i).getNum();
+        }
+        total = totalTax + totalPrice;
     }
 
     @RequestMapping(value="goods", method = RequestMethod.GET)
@@ -54,12 +57,17 @@ public class ItemController {
     @RequestMapping(value="add", method = RequestMethod.POST)
     public String add(Item item){
         items.add(item);
+        totalTax += item.getTax() * item.getNum();
+        totalPrice += item.getPrice() * item.getNum();
+        total = totalTax + totalPrice;
         return "redirect:/items";
     }
 
     @RequestMapping(value="items",method=RequestMethod.GET)
     public String listItems(Model model){
         model.addAttribute("items",items);
+        model.addAttribute("totalTax", totalTax);
+        model.addAttribute("total", total);
         return "list";
     }
 

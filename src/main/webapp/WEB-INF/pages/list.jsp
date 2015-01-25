@@ -17,6 +17,8 @@
        <br>
    </c:forEach>
 
+   Taxes:${totalTax}<br>
+   Total:${total}<br>
    <input type="button" value="add" onclick="javascript:location.href='add'">
 </body>
 </html>
