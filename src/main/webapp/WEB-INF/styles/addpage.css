@@ -1,3 +1,57 @@
+body {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.header {
+    text-align: center;
+    font-size: x-large;
+    font-family: Helvetica;
+}
+
 label {
     color: darkblue;
+    font-size: large;
+    font-style: oblique;
+}
+
+.product-input .product{
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+}
+
+.product-input div input{
+    background-color: #d1d1d1;
+    border-radius: 3px;
+    border: none;
+    height: 20px;
+}
+
+.product-input{
+    margin: 10px 20px;
+}
+
+#submit-btn {
+    background-color: transparent;
+    border: #e28133 2px solid;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: Helvetica;
+    font-size: 15px;
+}
+
+#page-body {
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 60px;
+    width: 300px;
+}
+
+.width70{
+    width: 70px;
+    display: inline-block;
+    text-align: left;
 }
