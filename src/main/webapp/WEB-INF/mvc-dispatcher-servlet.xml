@@ -23,6 +23,7 @@
 
     <mvc:resources mapping="/script/**" location="/WEB-INF/script/" />
     <mvc:resources mapping="/styles/**" location="/WEB-INF/styles/" />
+    <mvc:resources mapping="/pictures/**" location="/WEB-INF/pictures/" />
 
 
 </beans>

@@ -34,10 +34,11 @@ label {
 
 .detail {
     text-align: center;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 3px;
 }
 
 .to-label {
-    display: inline-block;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 17px;
     margin: 10px 50px 0 50px;
@@ -52,4 +53,37 @@ label {
     margin: 20px 50px;
     font-family: Helvetica;
     font-size: 15px;
+    box-shadow: 0 0 8px 3px #bbbbbb;
+}
+
+img {
+    position: absolute;
+    width: 100px;
+    left: 29%;
+    top: 80%;
+    z-index: 1;
+    -webkit-transition:width 10s;
+}
+
+img:hover {
+    width: 500px;
+}
+a:link {color: #FF0000}
+a:visited {color: #0000FF}
+a:hover {color: #FF00FF}
+a:active {color: #00FF00}
+
+li::before {
+    content: "*"
+}
+
+input {
+    display: block;
+}
+
+p {
+    background-color: ivory;
+    width: 200px;
+    height: 50px;
+    overflow: scroll;
 }

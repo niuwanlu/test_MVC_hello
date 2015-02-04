@@ -11,6 +11,7 @@
 <body>
     <div class="header">Your Products List</div>
 
+
     <div class="page-body">
         <div class="detail">
             <c:forEach var="um" items="${items}">
@@ -34,13 +35,18 @@
             </c:forEach>
         </div>
 
-        <div>
-            <label class="to-label">Taxes:  ${totalTax}</label>
+        <div class="to-label">
+            <label>Taxes:  ${totalTax}</label>
         </div>
-        <div>
-            <label class="to-label">Total:  ${total}</label>
+        <div class="to-label">
+            <label>Total:  ${total}</label>
         </div>
         <input id="addbtn" type="button" value="Add" onclick="javascript:location.href='add'">
+        <a href="http://www.google.com" target="_blank">google</a>
+        <p>这是你的税单，点击<em>add</em>可以添加商品，点击<em>google</em>访问搜索页面。</p>
     </div>
+
+    <img src="${pageContext.request.contextPath}/pictures/3.jpg" />
+
 </body>
 </html>

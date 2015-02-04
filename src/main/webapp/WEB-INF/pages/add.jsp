@@ -24,7 +24,7 @@
     <div class="product-input">
         <label for="name" class="width70">Name:</label>
         <div class="product">
-            <input name="name" path="name" id="name"/>
+            <input name="name" path="name" id="name" required/>
         </div>
     </div>
     <div class="product-input">

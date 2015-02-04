@@ -1,0 +1,122 @@
+body {
+    background-color: #e8e8e8;
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    height: 30px;
+    background: url("../pictures/graypic.jpg") repeat;
+}
+
+#menu {
+    float: left;
+    width: 300px;
+    text-align: center;
+}
+
+#menu img {
+    width: 200px;
+}
+
+ul {
+    list-style-type: none;
+    width: 200px;
+    margin: 20px auto;
+    padding: 0;
+    border-top: 2px groove white;
+}
+
+li {
+    border-bottom: 2px groove white;
+}
+
+
+.little {
+    font-size: smaller;
+    margin-bottom: 0;
+    text-align: center;
+    color: #98353a;
+}
+
+.large {
+    margin-top: 0;
+    text-align: center;
+    color: #98353a;
+}
+
+#content {
+    float: left;
+    width: 660px;
+    padding-left: 20px;
+}
+
+h1 {
+    font-family: "Times New Roman";
+    font-weight: normal;
+    text-align: center;
+    margin-top: 60px;
+}
+
+h1 span {
+    font-family: "Courier New", Courier, monospace;
+    font-style: italic;
+}
+
+.middle {
+    padding: 0 10px;
+    margin: 0;
+    line-height: 20px;
+}
+
+h2 {
+    display: inline-block;
+    font-weight: normal;
+    width: 240px;
+    text-align: center;
+}
+
+#left-line {
+    float: left;
+    width: 200px;
+    border-top: 2px groove white;
+    margin-top: 35px;
+}
+
+#right-line {
+    float: right;
+    width: 200px;
+    border-top: 2px groove white;
+    margin-top: 35px;
+}
+
+.contentlist {
+    width: 220px;
+    float: left;
+}
+.imglist {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 2px #888888;
+}
+
+#foot {
+    clear: left;
+    border-top: 2px groove white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#foot span {
+    color: #98353a;
+}
+
+#foot p {
+    font-size: small;
+    margin: 5px;
+}

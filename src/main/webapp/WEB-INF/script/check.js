@@ -1,9 +1,9 @@
 function checkname(form1) {
-    if (form1.name.value == "") {
-        alert("Name can not be empty");
-        form1.name.focus();
-        return false;
-    }
+    //if (form1.name.value == "") {
+    //    alert("Name can not be empty");
+    //    form1.name.focus();
+    //    return false;
+    //}
 
 
     if (form1.price.value <= 0) {

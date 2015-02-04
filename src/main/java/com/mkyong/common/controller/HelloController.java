@@ -19,4 +19,10 @@ public class HelloController {
         model.addAttribute("message", "Hello world");
         return "hello";
     }
+
+    @RequestMapping(value = "/work", method = RequestMethod.GET)
+    public String printWork(ModelMap model) {
+
+        return "work";
+    }
 }
