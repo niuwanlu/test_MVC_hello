@@ -1,15 +1,10 @@
 body {
-    background-color: #e8e8e8;
+    background: #e8e8e8 url("../pictures/graypic.jpg") repeat;
 }
 
 #container {
     width: 1000px;
     margin: 0 auto;
-}
-
-header {
-    height: 30px;
-    background: url("../pictures/graypic.jpg") repeat;
 }
 
 #menu {
@@ -22,7 +17,7 @@ header {
     width: 200px;
 }
 
-ul {
+.menu-list {
     list-style-type: none;
     width: 200px;
     margin: 20px auto;
@@ -30,22 +25,17 @@ ul {
     border-top: 2px groove white;
 }
 
-li {
+.menu-list li {
     border-bottom: 2px groove white;
+    padding: 15px;
 }
 
+li a {
+    color: #98353a;
+}
 
-.little {
+li a span {
     font-size: smaller;
-    margin-bottom: 0;
-    text-align: center;
-    color: #98353a;
-}
-
-.large {
-    margin-top: 0;
-    text-align: center;
-    color: #98353a;
 }
 
 #content {
@@ -66,7 +56,13 @@ h1 span {
     font-style: italic;
 }
 
-.middle {
+.introduction {
+    padding: 0 10px;
+    margin: 0;
+    line-height: 20px;
+}
+
+.list-title {
     padding: 0 10px;
     margin: 0;
     line-height: 20px;
@@ -79,24 +75,31 @@ h2 {
     text-align: center;
 }
 
-#left-line {
+.left-line {
     float: left;
     width: 200px;
     border-top: 2px groove white;
     margin-top: 35px;
 }
 
-#right-line {
+.right-line {
     float: right;
     width: 200px;
     border-top: 2px groove white;
     margin-top: 35px;
 }
 
-.contentlist {
-    width: 220px;
+.content-list {
+    padding: 0 0 20px 0;
     float: left;
 }
+
+.content-item {
+    width: 220px;
+    float: left;
+    text-align: center;
+}
+
 .imglist {
     width: 200px;
     height: 200px;
@@ -105,18 +108,18 @@ h2 {
     box-shadow: 0 2px 2px #888888;
 }
 
-#foot {
+#footer {
     clear: left;
     border-top: 2px groove white;
     text-align: center;
     padding-top: 20px;
 }
 
-#foot span {
+#footer span {
     color: #98353a;
 }
 
-#foot p {
+#footer p {
     font-size: small;
     margin: 5px;
 }
