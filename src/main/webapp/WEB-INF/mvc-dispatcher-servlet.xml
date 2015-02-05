@@ -25,5 +25,6 @@
     <mvc:resources mapping="/styles/**" location="/WEB-INF/styles/" />
     <mvc:resources mapping="/pictures/**" location="/WEB-INF/pictures/" />
 
+    <mvc:default-servlet-handler />
 
 </beans>

@@ -22,6 +22,9 @@ body {
     width: 200px;
     margin: 20px auto;
     padding: 0;
+}
+
+.menu-list li:first-child {
     border-top: 2px groove white;
 }
 
@@ -40,8 +43,7 @@ li a span {
 
 #content {
     float: left;
-    width: 660px;
-    padding-left: 20px;
+    width: 700px;
 }
 
 h1 {
@@ -71,40 +73,41 @@ h1 span {
 h2 {
     display: inline-block;
     font-weight: normal;
-    width: 240px;
+    width: 40%;
     text-align: center;
 }
 
 .left-line {
     float: left;
-    width: 200px;
+    width: 30%;
     border-top: 2px groove white;
     margin-top: 35px;
 }
 
 .right-line {
     float: right;
-    width: 200px;
+    width: 30%;
     border-top: 2px groove white;
     margin-top: 35px;
 }
 
 .content-list {
     padding: 0 0 20px 0;
-    float: left;
-}
-
-.content-item {
-    width: 220px;
-    float: left;
     text-align: center;
 }
 
+.content-list li {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
 .imglist {
+    display: block;
     width: 200px;
     height: 200px;
     border-radius: 5px;
-    margin: 10px;
+    margin: 10px auto;
     box-shadow: 0 2px 2px #888888;
 }
 
@@ -122,4 +125,72 @@ h2 {
 #footer p {
     font-size: small;
     margin: 5px;
+}
+
+@media screen and (max-width:1000px){
+
+    #container {
+        width: 100%;
+    }
+
+    #menu {
+        width: 25%;
+    }
+
+    #menu img {
+        width: 80%;
+    }
+
+    .menu-list {
+        width: 80%;
+    }
+
+    #content {
+        width: 70%;
+        padding-left: 10px;
+    }
+
+}
+
+@media screen and (max-width:650px){
+    #menu {
+        width: 100%;
+    }
+
+    .logo {
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    .menu-list {
+        width: 100%;
+    }
+
+    .menu-list li:first-child {
+        border-left: 2px groove white;
+        border-top: none;
+    }
+
+    .menu-list li {
+        display: inline-block;
+        border-right: 2px groove white;
+        border-bottom: none;
+    }
+
+    #content {
+        width: 90%;
+        padding: 5%;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    .left-line {
+        display: none;
+    }
+
+    .right-line {
+        display: none;
+    }
 }
