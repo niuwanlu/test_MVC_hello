@@ -1,14 +1,13 @@
 <%@ page language="java" import="java.util.*" pageEncoding="GBK" %>
 <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%--<%@ taglib uri="http://bigpond.com/commontaglib" prefix="bp" %>--%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <%--<script src="<c:url value="/resources/check.js" />"></script>--%>
         <%--<script src="<c:url value="/script/check.js" />"></script>--%>
-        <%--<script type="text/javascript" src="${pageContext.request.contextPath}/script/check.js"></script>--%>
-        <%--<bp:buildInfo type="text/javascript" jsSrc="WEB-INF/script/check.js"/>--%>
+        <script type="text/javascript" src="${pageContext.request.contextPath}/script/check.js"></script>
 
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/styles/addpage.css" />
 </head>
