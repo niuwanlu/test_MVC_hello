@@ -25,4 +25,10 @@ public class HelloController {
 
         return "work";
     }
+
+    @RequestMapping(value = "/food", method = RequestMethod.GET)
+    public String printFood(ModelMap model) {
+
+        return "food";
+    }
 }

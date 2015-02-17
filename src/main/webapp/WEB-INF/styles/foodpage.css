@@ -1,0 +1,99 @@
+a {
+    color: #38ab97;
+    font-style: italic;
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#aside {
+    width: 200px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+#aside ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.side-item {
+    clear: both;
+}
+
+.side-item a {
+    display: block;
+    padding: 12px;
+}
+
+#li1 {
+    background: url('../pictures/aside1.png') no-repeat 5px;
+    background-size: 30px 30px;
+    text-indent: 40px;
+}
+
+#li2 {
+    background: url('../pictures/aside2.png') no-repeat 5px;
+    background-size: 30px 30px;
+    text-indent: 40px;
+}
+
+#li3 {
+    background: url('../pictures/aside3.png') no-repeat 5px;
+    background-size: 30px 30px;
+    text-indent: 40px;
+}
+
+#li4 {
+    background: url('../pictures/aside4.png') no-repeat 5px;
+    background-size: 30px 30px;
+    text-indent: 40px;
+}
+
+#li5 {
+    background: url('../pictures/aside5.png') no-repeat 5px;
+    background-size: 30px 30px;
+    text-indent: 40px;
+}
+
+#aside-foot {
+    margin-top: 70px;
+}
+
+#aside-foot label {
+    display: block;
+    border-bottom: 1px dashed #e6e6e6 ;
+    padding-bottom: 5px;
+}
+
+#aside-foot a {
+    display: block;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 7px;
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+#twitter {
+    background: url('../pictures/twitter.png') no-repeat 5px;
+    background-size: 30px 30px;
+}
+
+p {
+    font-style: italic;
+}
+
+#facebook {
+    background: url('../pictures/facebook.png') no-repeat 5px;
+    background-size: 30px 30px;
+}
