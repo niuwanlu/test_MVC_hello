@@ -1,6 +1,7 @@
 <html>
 <body>
       <h1>Message: ${message}</h1>
+      <h2>Message: ${split}</h2>
       <form method="get"><br>
             <div>
                   <label for="num">number</label>
